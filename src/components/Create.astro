@@ -1,0 +1,95 @@
+<div class="form-container">
+    <h1>New Post</h1>
+    <form method="POST" action="/api/createDocument">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input 
+                id="title" 
+                type="text" 
+                name="title" 
+                placeholder="Enter post title"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="content">Content</label>
+            <input 
+                id="content" 
+                type="text" 
+                name="content" 
+                placeholder="Enter post content"
+                required
+            />
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f9f9f9;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.form-container {
+		background: #fff;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.form-container h1 {
+		font-size: 24px;
+		margin-bottom: 20px;
+		text-align: center;
+		color: #333;
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	.form-group label {
+		display: block;
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: #555;
+	}
+
+	.form-group input {
+		width: 100%;
+		padding: 10px;
+		font-size: 14px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	.form-group input:focus {
+		border-color: #007BFF;
+		outline: none;
+	}
+
+	.form-container button {
+		width: 100%;
+		padding: 10px;
+		background-color: #007BFF;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+	.form-container button:hover {
+		background-color: #0056b3;
+	}
+</style>
