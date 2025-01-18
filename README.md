@@ -46,3 +46,14 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## Install Appwrite
+
+```
+    docker run -it --rm `
+        --volume /var/run/docker.sock:/var/run/docker.sock `
+        --volume ${pwd}/appwrite:/usr/src/code/appwrite:rw `
+        --entrypoint="install" `
+        appwrite/appwrite:1.6.0
+```
